@@ -1,3 +1,13 @@
+:root {
+  --branding-color: #6ed6d7;
+  --secondary-color: #32414d;
+}
+
+body {
+  background: #32414d;
+  color: white;
+}
+
 .hero {
   background-image: url('/images/morainelake.jpg');
   background-size: cover;
@@ -17,7 +27,7 @@ h1 {
 .photo-credit {
   position: absolute;
   right: 20px;
-  top: 670px;
+  top: 570px;
 }
 
 .photo-credit a {
@@ -26,4 +36,30 @@ h1 {
 
 footer {
   text-align: center;
+}
+
+.container {
+  /* padding-left: 200px;
+  padding-right: 200px; */
+  text-align: center;
+  margin: 20px auto;
+}
+
+.btn-branding {
+  background: var(--branding-color);
+  text-align: center;
+  color: var(--secondary-color);
+  font-weight: bold;
+  opacity: 0.85;
+  padding: 10px 20px;
+  transition: all 0.3s ease-out;
+}
+
+.btn-branding:hover i {
+  transform: translateX(0);
+}
+
+.btn-branding i {
+  transform: translateX(0);
+  transition: transform 0.3s ease-out;
 }
